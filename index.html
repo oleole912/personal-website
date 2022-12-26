@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script
+      src="https://kit.fontawesome.com/b21fe3dcdd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Montserrat:wght@300;400;500&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="splash">
+      <div class="home">
+        <div class="container">
+          <div class="home__title">
+            <div class="home__title__content">
+              <div class="home__title__content__container">
+                <p class="home__title__content__container__text">Hello</p>
+
+                <ul class="home__title__content__container__list">
+                  <li class="home__title__content__container__list__item">
+                    recruiters,
+                  </li>
+                  <li class="home__title__content__container__list__item">
+                    friends,
+                  </li>
+                  <li class="home__title__content__container__list__item">
+                    users,
+                  </li>
+                  <li class="home__title__content__container__list__item">
+                    everyone,
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="home__title__subtitle">
+              I'm <span class="name">Aleksandra Bukalska.</span>
+            </h2>
+            <p class="home__title__subtitle__text">Frontend Developer</p>
+          </div>
+          <div class="home__description">
+            <a href="#contact" class="btn">contact me</a>
+          </div>
+        </div>
+      </div>
+
+        <nav class="nav">
+          <div class="nav__logo">
+            <a href="#" class="logo">a.bukalska</a>
+          </div>
+          <div class="nav__menu">
+            <ul class="nav-list">
+              <li><a href="#">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#contact">contact</a></li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-linkedin"></i>
+                  <p class="nav-icon">linkedin</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-github"></i>
+                  <p class="nav-icon">github</p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+    </header>
+    <section id="about" class="about">
+        <div class="container reveal">
+            <div class="section-title">
+                <h1 class="section-title__title">Something<br> about me</h1>
+            </div>
+            <div class="about-content">
+                <img class="about-content__image" src="/images/about.png" alt="profile-picture">
+                <div class="about-content__description">
+                    <p>
+                        I am a creative problem solver with high standards of quality<br>
+                        and a strong desire to learn and improve.<br><br>
+                        I taught myself to code through many nights and weekends.<br><br>
+                        During that time I realized that I found a new passion.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="technologies">
+      <div class="container reveal">
+        <div class="technologies__icons">
+          <i class="reveal icon1 fa-brands fa-react"></i>
+          <i class="reveal icon2 fa-brands fa-html5"></i>
+          <i class="reveal icon3 fa-brands fa-git"></i>
+          <i class="reveal icon4 fa-brands fa-square-js"></i>
+          <i class="reveal icon5 fa-brands fa-bootstrap"></i>
+          <i class="reveal icon6 fa-brands fa-sass"></i>
+        </div>
+        <div class="section-title">
+          <h1 class="section-title__title">Technologies</h1>
+        </div>
+        <ul class="technologies__list">
+          <li class="technology-item">HTML</li>
+          <li class="technology-item">CSS &amp; Sass</li>
+          <li class="technology-item">Bootstrap</li>
+          <li class="technology-item">JavaScript</li>
+          <li class="technology-item">React</li>
+          <li class="technology-item">Git</li>
+          <li class="technology-item">Responsive Design</li>
+          <li class="technology-item">Unit Testing</li>
+          <li class="technology-item">AJAX</li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects" class="portfolio">
+      <div class="container reveal">
+        <div class="section-title">
+          <h1 class="section-title__title">Portfolio</h1>
+        </div>
+
+        <div class="portfolio__content">
+
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card__image"
+              src="/images/splitter-main.png"
+              alt="tip-calculator"
+            />
+            <div class="portfolio__card__overlay">
+              <div class="overlay-title">
+                <h1 class="overlay-title__title">Splitter</h1>
+                <h2 class="overlay-title__subtitle">Built with: React.js</h2>
+              </div>
+              <button class="btn-portfolio" id="1">learn more</button>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card__image"
+              src="/images/pizzeria-main.png"
+              alt="pizzeria's website"
+            />
+            <div class="portfolio__card__overlay">
+              <div class="overlay-title">
+                <h1 class="overlay-title__title">Pizzeria</h1>
+                <h2 class="overlay-title__subtitle">Built with: Vanilla JavaScript</h2>
+              </div>
+              <button class="btn-portfolio" id="2">learn more</button>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card__image"
+              src="/images/waiter-main.png"
+              alt="waiter-app"
+            />
+            <div class="portfolio__card__overlay">
+              <div class="overlay-title">
+                <h1 class="overlay-title__title">Waiter-app</h1>
+                <h2 class="overlay-title__subtitle">
+                  Built with: React, Redux, React Router, AJAX
+                </h2>
+              </div>
+              <button class="btn-portfolio" id="3">learn more</button>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card__image"
+              src="/images/landing-page-main.png"
+              alt=""
+            />
+            <div class="portfolio__card__overlay">
+              <div class="overlay-title">
+                <h1 class="overlay-title__title">Landing Page</h1>
+                <h2 class="overlay-title__subtitle">Built with: HTML, CSS</h2>
+              </div>
+              <button class="btn-portfolio" id="4">learn more</button>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card__image"
+              src="/images/splitter-main.png"
+              alt=""
+            />
+            <div class="portfolio__card__overlay">
+              <div class="overlay-title">
+                <h1 class="overlay-title__title">Notification Page</h1>
+                <h2 class="overlay-title__subtitle">Built with: JavaScript</h2>
+              </div>
+              <button class="btn-portfolio" id="5">learn more</button>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card__image"
+              src="/images/pizzeria-main.png"
+              alt=""
+            />
+            <div class="portfolio__card__overlay">
+              <div class="overlay-title">
+                <h1 class="overlay-title__title">About Me</h1>
+                <h2 class="overlay-title__subtitle">
+                  Built with: HTML, CSS, JavaScript
+                </h2>
+              </div>
+              <button class="btn-portfolio" id="6">learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container reveal">
+        <div class="section-title">
+          <h1 class="section-title__title">Contact me</h1>
+          <h2 class="section-title__subtitle">
+            Want to work together or have any questions?
+          </h2>
+        </div>
+        <form action="https://formspree.io/f/mayzwdwv" method="POST">
+          <div class="form">
+            <input type="text" name="text" placeholder="Your name" />
+            <input type="email" name="email" placeholder="Your email" />
+            <textarea
+              name="message"
+              placeholder="Your message"
+              rows="8"
+            ></textarea>
+          </div>
+          <!-- your other form fields go here -->
+          <div class="btn-contact">
+            <button type="submit" class="btn btn-contact__btn">
+              Send message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__content__container">
+                <div class="modal__content__image">
+                    <img class="modal-image-1">
+                </div>
+                <div class="modal__content__image">
+                    <img class="modal-image-1" src="/images/pizzeria-main.png">
+                </div>
+                <div class="modal__content__image">
+                    <img class="modal-image-1" src="/images/splitter-main.png">
+                </div>
+            </div>
+
+            <div class="modal__content__description">
+                <h1 class="modal-title"></h1>
+                <p class="modal-description">Some description</p>
+                <span class="closeBtn">&times;</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
