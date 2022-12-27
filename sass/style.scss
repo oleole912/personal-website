@@ -213,6 +213,7 @@ section {
     &__text {
       font-size: ($base-size * 1.2);
       margin-top: 0;
+      font-weight: 700;
     }
   }
 }
@@ -230,8 +231,6 @@ section {
   top: 100%;
   left: 0%;
 }
-
-
 
 .home__title__content {
   position: absolute;
@@ -844,8 +843,675 @@ section {
   justify-content: space-around;
 }
 
+@media (max-width: 383px) {
 
-@media (max-width: 1024px) {
+/* Global */
+
+.splash {
+  background-position: unset;
+}
+
+.section-title {
+  margin: 10px 0 60px;
+}
+
+  /* Home */
+
+  .home__title__content {
+    top: 57%;
+    left: 46%;
+
+    font-size: ($base-size * 1.6);
+    color: $color-bright-yellow;
+
+    &__container {
+      height: 50px;
+      padding: 0 10px;
+
+      &__list {
+        padding-left: 120px;
+
+        &__item {
+          line-height: 45px;
+        }
+    }
+  }
+}
+
+ /* About */
+
+ .about-content {
+  flex-direction: column;
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    outline: 1.5px solid $color-red;
+    outline-offset: 15px;
+    margin-left: 0;
+  }
+
+  &__description {
+    padding: 15px 5px 0;
+    line-height: 1.5;
+    font-size: ($base-size * 0.8);
+ }
+}
+
+/* Technologies */
+
+.technologies {
+  padding-bottom: 0;
+
+  &__list {
+    font-size: ($base-size * 0.65);
+    gap: 35px;
+    padding: 0 15px 0 5px;
+  }
+}
+
+.technology-item {
+  box-shadow: 10px 5px 5px 1px #ffcc33;
+}
+
+.icon1 {
+  font-size: 45px;
+}
+
+.icon2 {
+  font-size: 33px;
+}
+
+.icon3 {
+  font-size: 30px;
+}
+
+.icon4 {
+  font-size: 35px;
+}
+
+.icon5 {
+  font-size: 30px;
+}
+
+.icon6 {
+  font-size: 43px;
+}
+
+.reveal.icon1.active {
+  transform: translate(160px, 40px);
+}
+
+.reveal.icon2.active {
+  transform: translate(145px, -183px);
+}
+
+.reveal.icon3.active {
+  transform: translate(200px, -105px);
+}
+
+.reveal.icon4.active {
+  transform: translate(90px, -173px);
+}
+
+.reveal.icon5.active {
+  transform: translate(115px, -15px);
+}
+
+.reveal.icon6.active {
+  transform: translate(0px, -70px);
+}
+
+/* Portfolio */
+
+.portfolio__content {
+  padding: 0 20px;
+}
+
+.portfolio__card {
+  width: 50%;
+}
+
+/* Contact */
+
+.form {
+  width: 85%;
+}
+
+
+// media end
+}
+
+@media (min-width: 384px) and (max-width: 480px) {
+
+/* Global */
+
+.splash {
+  background-position: unset;
+}
+
+.section-title {
+  margin: 10px 0 60px;
+}
+
+  /* Home */
+
+  .home__title {
+    padding-top: 40px;
+
+    &__subtitle__text {
+      font-size: ($base-size * 1.4);
+    }
+  }
+
+  .home__title__content {
+    top: 65%;
+    left: 44%;
+
+    font-size: ($base-size * 1.7);
+    color: $color-bright-yellow;
+
+    &__container {
+      height: 50px;
+      padding: 0 10px;
+
+      &__list {
+        padding-left: 120px;
+    }
+  }
+}
+
+
+  /* About */
+
+  .about-content {
+    flex-direction: column;
+
+    &__image {
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+      outline: 1.5px solid $color-red;
+      outline-offset: 15px;
+      margin-left: 0;
+    }
+
+    &__description {
+      padding: 15px 5px 0;
+      line-height: 1.5;
+      font-size: ($base-size * 0.8);
+   }
+  }
+
+  /* Technologies */
+
+  .technologies {
+    padding-bottom: 0;
+
+    &__list {
+      font-size: ($base-size * 0.65);
+      gap: 35px;
+      padding: 0 15px 0 5px;
+    }
+  }
+
+  .technology-item {
+    box-shadow: 10px 5px 5px 1px #ffcc33;
+  }
+
+  .icon1 {
+    font-size: 45px;
+  }
+
+  .icon2 {
+    font-size: 33px;
+  }
+
+  .icon3 {
+    font-size: 30px;
+  }
+
+  .icon4 {
+    font-size: 35px;
+  }
+
+  .icon5 {
+    font-size: 30px;
+  }
+
+  .icon6 {
+    font-size: 43px;
+  }
+
+  .reveal.icon1.active {
+    transform: translate(160px, 40px);
+  }
+
+  .reveal.icon2.active {
+    transform: translate(145px, -183px);
+  }
+
+  .reveal.icon3.active {
+    transform: translate(200px, -105px);
+  }
+
+  .reveal.icon4.active {
+    transform: translate(90px, -173px);
+  }
+
+  .reveal.icon5.active {
+    transform: translate(115px, -15px);
+  }
+
+  .reveal.icon6.active {
+    transform: translate(0px, -70px);
+  }
+
+  /* Portfolio */
+
+  .portfolio__content {
+    padding: 0 20px;
+  }
+
+  .portfolio__card {
+    width: 50%;
+  }
+
+  /* Contact */
+
+  .form {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 740px) {
+
+  .home__title__subtitle {
+    margin: 210px 0 20px;
+    font-size: ($base-size * 1.8);
+  }
+
+  .home__title__content {
+    top: 60%;
+    left: 47%;
+
+    font-size: ($base-size * 1.7);
+    color: $color-bright-yellow;
+
+    &__container {
+      height: 50px;
+      padding: 0 10px;
+
+      &__list {
+        padding-left: 120px;
+    }
+  }
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  /* Global */
+
+.splash {
+  background-position: unset;
+}
+
+  /* Home */
+
+  .home__title__content {
+    top: 70%;
+    left: 30%;
+
+    font-size: ($base-size * 2.4);
+    color: $color-bright-yellow;
+
+    &__container {
+      height: 60px;
+      padding: 0 10px;
+
+      &:after,
+      &:before {
+        font-size: ($base-size * 2.6);
+        line-height: ($base-size * 2.6);
+      }
+
+      &__list {
+        padding-left: 160px;
+      }
+    }
+  }
+
+  .home__title__subtitle {
+    margin: 440px 0 20px;
+  }
+
+  /* About */
+
+  .about-content {
+    flex-direction: column;
+
+    &__image {
+      width: 220px;
+      height: 220px;
+      border-radius: 220px;
+      outline: 1.5px solid $color-red;
+      outline-offset: 15px;
+      margin: 25px 0 0;
+    }
+
+    &__description {
+      padding: 30px 70px 0;
+      line-height: 1.5;
+      font-size: ($base-size * 0.9);
+   }
+  }
+
+  /* Technologies */
+
+  .technologies {
+    padding-bottom: 0;
+
+    &__list {
+      font-size: ($base-size * 0.65);
+      gap: 45px;
+      padding: 0 35px 0 25px;
+    }
+  }
+
+  .technology-item {
+    box-shadow: 15px 8px 3px 1px #ffcc33;
+  }
+
+  /* Portfolio */
+
+  .portfolio__content {
+    padding: 0 50px;
+  }
+
+  .portfolio__card {
+    width: 50%;
+  }
+
+  /* Contact */
+
+  .form {
+    width: 70%;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+   /* Global */
+
+   .btn {
+    font-size: ($base-size * 0.9);
+  }
+
+   /* Home */
+
+   .home__title__content {
+    top: 70%;
+    left: 30%;
+
+    font-size: ($base-size * 2.4);
+    color: $color-bright-yellow;
+
+    &__container {
+      height: 65px;
+      padding: 0 40px;
+
+      &:after,
+      &:before {
+        font-size: ($base-size * 2.6);
+        line-height: ($base-size * 2.6);
+      }
+
+      &__list {
+        padding-left: 180px;
+
+        &__item {
+          line-height: 65px;
+        }
+      }
+    }
+  }
+
+  .home__title__subtitle {
+    margin: 440px 0 20px;
+
+    &__text {
+      font-size: ($base-size * 1.5);
+    }
+  }
+
+  /* About */
+
+  .about-content {
+    flex-direction: column;
+
+    &__image {
+      width: 270px;
+      height: 270px;
+      border-radius: 270px;
+      outline: 1.5px solid $color-red;
+      outline-offset: 15px;
+      margin: 25px 0 0;
+    }
+
+    &__description {
+      padding: 30px 70px 0;
+      line-height: 1.5;
+      font-size: ($base-size * 0.9);
+   }
+  }
+
+  /* Technologies */
+
+  .technologies {
+    padding-bottom: 0;
+
+    &__list {
+      font-size: ($base-size * 0.75);
+      gap: 50px;
+      padding: 0 60px 0 50px;
+    }
+  }
+
+  .technology-item {
+    box-shadow: 15px 8px 3px 1px #ffcc33;
+  }
+
+  /* Portfolio */
+
+  .portfolio__content {
+    padding: 0;
+  }
+
+  .portfolio__card {
+    width: 33%;
+  }
+
+  /* Contact */
+
+  .form {
+    width: 60%;
+  }
+
+}
+////////////////////////// with height /////////////////////////
+@media (min-width: 660px) and (max-width: 1024px) and (max-height: 440px) {
+
+   /* Global */
+
+   .btn {
+    font-size: ($base-size * 0.7);
+  }
+
+  .section-title {
+    margin: 10px 0 0;
+
+    &__title {
+      font-size: ($base-size * 1.2);
+    }
+  }
+
+  /* Navbar */
+
+  .toggle-btn {
+    display: flex;
+  }
+
+  .nav__menu {
+    display: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-list {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .nav {
+    padding: 12px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 0;
+  }
+
+  .nav__menu.active {
+    display: block;
+  }
+
+  /* Home */
+
+
+  .home__title__content {
+    left: 25%;
+
+    font-size: ($base-size * 1.5);
+
+    &__container {
+      height: 50px;
+      padding: 0 40px;
+
+      &:after,
+      &:before {
+        font-size: ($base-size * 2);
+        line-height: ($base-size * 2);
+      }
+
+      &__list {
+        padding-left: 120px;
+
+        &__item {
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .home__title__subtitle {
+    margin: 120px 0 10px;
+    font-size: ($base-size * 1.4);
+
+    &__text {
+      font-size: ($base-size * 1);
+    }
+  }
+
+  /* About */
+
+  .about {
+    padding-bottom: 40px;
+  }
+
+  .about-content {
+    flex-direction: row;
+
+    &__image {
+      width: 180px;
+      height: 180px;
+      border-radius: 180px;
+    }
+
+    &__description {
+      font-size: ($base-size * 0.7);
+    }
+  }
+
+  /* Technologies */
+
+  .technologies {
+    padding-bottom: 40px;
+
+    &__icons {
+      padding-bottom: 0;
+    }
+
+    &__list {
+      gap: 30px;
+      padding: 20px 100px 0 80px;
+      font-size: ($base-size * 0.6);
+    }
+  }
+
+  .technology-item {
+    box-shadow: 10px 5px 3px 1px #ffcc33;
+  }
+
+  /* Portfolio */
+
+  .portfolio__content {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  /* Global */
+
+  .btn {
+    font-size: ($base-size * 0.9);
+  }
+
+  /* Home */
+
+  .home__title__content {
+    left: 25%;
+
+    font-size: ($base-size * 2.4);
+
+    &__container {
+      height: 60px;
+      padding: 0 40px;
+
+      &:after,
+      &:before {
+        font-size: ($base-size * 2.8);
+        line-height: ($base-size * 2.8);
+      }
+
+      &__list {
+        padding-left: 180px;
+      }
+    }
+  }
+
+  .home__title__subtitle {
+    margin: 440px 0 20px;
+
+    &__text {
+      font-size: ($base-size * 1.4);
+    }
+  }
+}
+
+//////////////// media for navbar only //////////////////
+
+@media (max-width: 1024px) and (min-height: 441px) {
   .toggle-btn {
     display: flex;
   }
