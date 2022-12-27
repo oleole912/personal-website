@@ -176,6 +176,24 @@ section {
   font-size: 0px;
 }
 
+.toggle-btn {
+  position: absolute;
+
+  right: 5%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 27px;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: $color-white;
+  border-radius: 10px;
+}
+
 /* Home */
 
 .home {
@@ -672,7 +690,6 @@ section {
 
 .portfolio__card {
   width: 33%;
-  height: 350px;
   position: relative;
 
   &__image {
@@ -753,16 +770,20 @@ section {
 
     &__content {
         background-color: $color-white;
-        margin: 20% auto;
-        padding: 10px;
+        margin: 5% auto;
+        padding: 10px 20px;
         width: 40%;
         display: flex;
         flex-direction: column;
+        // moze usunac max height ?
+        max-height: 80%;
 
         &__container {
             overflow-x: scroll;
             display: flex;
             scroll-snap-type: x proximity;
+            width: 100%;
+            height: 100%;
         }
 
         &__image {
@@ -771,14 +792,15 @@ section {
             scroll-snap-align: center;
         }
 
+
         &__image img {
             width: 100%;
             height: 100%;
+            object-fit: scale-down;
         }
 
         &__description {
-            padding: 0 20px;
-
+            padding: 20px 50px 0;
         }
 
         .closeBtn {
@@ -797,6 +819,56 @@ section {
 .modal-title {
     font-size: ($base-size * 1.2);
     text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.modal-title::after {
+  background-color: $color-red;
+  content: " ";
+  height: 2px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.modal-description {
+  font-size: ($base-size * 0.85);
+  line-height: 1.5;
+}
+
+.modal-description-buttons {
+  display: flex;
+  justify-content: space-around;
 }
 
 
+@media (max-width: 1024px) {
+  .toggle-btn {
+    display: flex;
+  }
+
+  .nav__menu {
+    display: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-list {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .nav {
+    padding: 22px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+  }
+
+  .nav__menu.active {
+    display: block;
+  }
+}
