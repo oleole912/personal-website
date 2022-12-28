@@ -461,29 +461,29 @@ section {
 /* About */
 
 .about {
-    background-color: lighten($color-dark, 5%);
-    color: #fffffe;
+  background-color: lighten($color-dark, 5%);
+  color: #fffffe;
 }
 
 .about-content {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    &__image {
-        width: 350px;
-        height: 350px;
-        border-radius: 350px;
-        outline: 1.5px solid $color-red;
-        outline-offset: 25px;
-        margin-left: 90px;
-    }
+  &__image {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    outline: 1.5px solid $color-red;
+    outline-offset: 25px;
+    margin-left: 90px;
+  }
 
-    &__description {
-        padding: 0px 5px 0px 70px;
-        line-height: 1.7;
-        letter-spacing: 1px;
-        font-weight: 300;
-    }
+  &__description {
+    padding: 0px 5px 0px 70px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
 }
 
 /* Technologies */
@@ -666,7 +666,7 @@ section {
 }
 
 .btn-contact__btn {
-    background-color: lighten($color-dark, 5%);
+  background-color: lighten($color-dark, 5%);
   border: none;
 }
 
@@ -717,7 +717,6 @@ section {
   }
 
   .overlay-title {
-
     &__title {
       font-weight: 500;
       margin-bottom: 0;
@@ -751,75 +750,74 @@ section {
 }
 
 .info {
-    display: none;
+  display: none;
 }
 
 /* Modal */
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
 
-    &__content {
-        background-color: $color-white;
-        margin: 5% auto;
-        padding: 10px 20px;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        // moze usunac max height ?
-        max-height: 80%;
+  &__content {
+    background-color: $color-white;
+    margin: 5% auto;
+    padding: 10px 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    // moze usunac max height ?
+    max-height: 80%;
 
-        &__container {
-            overflow-x: scroll;
-            display: flex;
-            scroll-snap-type: x proximity;
-            width: 100%;
-            height: 100%;
-        }
-
-        &__image {
-            display: flex;
-            min-width: 100%;
-            scroll-snap-align: center;
-        }
-
-
-        &__image img {
-            width: 100%;
-            height: 100%;
-            object-fit: scale-down;
-        }
-
-        &__description {
-            padding: 20px 50px 0;
-        }
-
-        .closeBtn {
-            float: right;
-            font-size: ($base-size * 1.8);
-            color: $color-light-grey;
-        }
-
-        .closeBtn:hover {
-            color: $color-dark;
-            cursor: pointer;
-        }
+    &__container {
+      overflow-x: scroll;
+      display: flex;
+      scroll-snap-type: x proximity;
+      width: 100%;
+      height: 100%;
     }
+
+    &__image {
+      display: flex;
+      min-width: 100%;
+      scroll-snap-align: center;
+    }
+
+    &__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+    }
+
+    &__description {
+      padding: 20px 50px 0;
+    }
+
+    .closeBtn {
+      float: right;
+      font-size: ($base-size * 1.8);
+      color: $color-light-grey;
+    }
+
+    .closeBtn:hover {
+      color: $color-dark;
+      cursor: pointer;
+    }
+  }
 }
 
 .modal-title {
-    font-size: ($base-size * 1.2);
-    text-align: center;
-    padding-bottom: 20px;
-    position: relative;
+  font-size: ($base-size * 1.2);
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
 }
 
 .modal-title::after {
@@ -842,7 +840,7 @@ section {
   display: flex;
   justify-content: space-around;
 
-  a{
+  a {
     text-transform: uppercase;
     background-color: $color-white;
     color: $color-dark;
@@ -865,16 +863,15 @@ section {
 }
 
 @media (max-width: 383px) {
+  /* Global */
 
-/* Global */
+  .splash {
+    background-position: unset;
+  }
 
-.splash {
-  background-position: unset;
-}
-
-.section-title {
-  margin: 10px 0 60px;
-}
+  .section-title {
+    margin: 10px 0 60px;
+  }
 
   /* Home */
 
@@ -895,197 +892,9 @@ section {
         &__item {
           line-height: 45px;
         }
+      }
     }
   }
-}
-
- /* About */
-
- .about-content {
-  flex-direction: column;
-
-  &__image {
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    outline: 1.5px solid $color-red;
-    outline-offset: 15px;
-    margin-left: 0;
-  }
-
-  &__description {
-    padding: 15px 5px 0;
-    line-height: 1.5;
-    font-size: ($base-size * 0.8);
- }
-}
-
-/* Technologies */
-
-.technologies {
-  padding-bottom: 0;
-
-  &__list {
-    font-size: ($base-size * 0.65);
-    gap: 35px;
-    padding: 0 15px 0 5px;
-  }
-}
-
-.technology-item {
-  box-shadow: 10px 5px 5px 1px #ffcc33;
-}
-
-.icon1 {
-  font-size: 45px;
-}
-
-.icon2 {
-  font-size: 33px;
-}
-
-.icon3 {
-  font-size: 30px;
-}
-
-.icon4 {
-  font-size: 35px;
-}
-
-.icon5 {
-  font-size: 30px;
-}
-
-.icon6 {
-  font-size: 43px;
-}
-
-.reveal.icon1.active {
-  transform: translate(160px, 40px);
-}
-
-.reveal.icon2.active {
-  transform: translate(145px, -183px);
-}
-
-.reveal.icon3.active {
-  transform: translate(200px, -105px);
-}
-
-.reveal.icon4.active {
-  transform: translate(90px, -173px);
-}
-
-.reveal.icon5.active {
-  transform: translate(115px, -15px);
-}
-
-.reveal.icon6.active {
-  transform: translate(0px, -70px);
-}
-
-/* Portfolio */
-
-.portfolio__content {
-  padding: 0 20px;
-}
-
-.portfolio__card {
-  width: 50%;
-}
-
-.overlay-title {
-
-  &__title {
-    font-weight: 500;
-    margin-bottom: 0;
-    font-size: ($base-size * 0.8)
-  }
-
-  &__subtitle {
-    display: none;
-  }
-}
-
-.btn-portfolio {
-  font-size: ($base-size * 0.5);
-  padding: 0.5px 2px;
-}
-
-/* Modal */
-
-.modal__content {
-  width: 75%;
-
-  &__description {
-    padding: 10px 10px 0;
-  }
-}
-
-.modal-title {
-  font-size: ($base-size * 0.9);
-}
-
-.modal-description {
-  font-size: ($base-size * 0.5);
-}
-
-.modal-description-buttons a{
-  font-size: ($base-size * 0.5);
-  padding: 3px 7px;
-  width: 45%;
-  text-align: center;
-}
-
-
-/* Contact */
-
-.form {
-  width: 85%;
-}
-
-
-// media end
-}
-
-@media (min-width: 384px) and (max-width: 480px) {
-
-/* Global */
-
-.splash {
-  background-position: unset;
-}
-
-.section-title {
-  margin: 10px 0 60px;
-}
-
-  /* Home */
-
-  .home__title {
-    padding-top: 40px;
-
-    &__subtitle__text {
-      font-size: ($base-size * 1.4);
-    }
-  }
-
-  .home__title__content {
-    top: 65%;
-    left: 44%;
-
-    font-size: ($base-size * 1.7);
-    color: $color-bright-yellow;
-
-    &__container {
-      height: 50px;
-      padding: 0 10px;
-
-      &__list {
-        padding-left: 120px;
-    }
-  }
-}
 
   /* About */
 
@@ -1105,7 +914,7 @@ section {
       padding: 15px 5px 0;
       line-height: 1.5;
       font-size: ($base-size * 0.8);
-   }
+    }
   }
 
   /* Technologies */
@@ -1115,13 +924,14 @@ section {
 
     &__list {
       font-size: ($base-size * 0.65);
-      gap: 35px;
-      padding: 0 15px 0 5px;
+      gap: 34px;
+      padding: 0 15px 0 10px;
     }
   }
 
   .technology-item {
-    box-shadow: 10px 5px 5px 1px #ffcc33;
+    box-shadow: 6px 5px 5px 1px #ffcc33;
+    padding: 6px;
   }
 
   .icon1 {
@@ -1183,11 +993,193 @@ section {
   }
 
   .overlay-title {
-
     &__title {
       font-weight: 500;
       margin-bottom: 0;
-      font-size: ($base-size * 0.8)
+      font-size: ($base-size * 0.8);
+    }
+
+    &__subtitle {
+      display: none;
+    }
+  }
+
+  .btn-portfolio {
+    font-size: ($base-size * 0.5);
+    padding: 0.5px 2px;
+  }
+
+  /* Modal */
+
+  .modal__content {
+    width: 75%;
+
+    &__description {
+      padding: 10px 10px 0;
+    }
+  }
+
+  .modal-title {
+    font-size: ($base-size * 0.9);
+  }
+
+  .modal-description {
+    font-size: ($base-size * 0.5);
+  }
+
+  .modal-description-buttons a {
+    font-size: ($base-size * 0.5);
+    padding: 3px 7px;
+    width: 45%;
+    text-align: center;
+  }
+
+  /* Contact */
+
+  .form {
+    width: 85%;
+  }
+}
+
+@media (min-width: 384px) and (max-width: 480px) {
+  /* Global */
+
+  .splash {
+    background-position: unset;
+  }
+
+  .section-title {
+    margin: 10px 0 60px;
+  }
+
+  /* Home */
+
+  .home__title {
+    padding-top: 40px;
+
+    &__subtitle__text {
+      font-size: ($base-size * 1.4);
+    }
+  }
+
+  .home__title__content {
+    top: 65%;
+    left: 44%;
+
+    font-size: ($base-size * 1.7);
+    color: $color-bright-yellow;
+
+    &__container {
+      height: 50px;
+      padding: 0 10px;
+
+      &__list {
+        padding-left: 120px;
+      }
+    }
+  }
+
+  /* About */
+
+  .about-content {
+    flex-direction: column;
+
+    &__image {
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+      outline: 1.5px solid $color-red;
+      outline-offset: 15px;
+      margin-left: 0;
+    }
+
+    &__description {
+      padding: 15px 5px 0;
+      line-height: 1.5;
+      font-size: ($base-size * 0.9);
+    }
+  }
+
+  /* Technologies */
+
+  .technologies {
+    padding-bottom: 0;
+
+    &__list {
+      font-size: ($base-size * 0.7);
+      gap: 35px;
+      padding: 0 15px 0 10px;
+    }
+  }
+
+  .technology-item {
+    box-shadow: 6px 5px 5px 1px #ffcc33;
+    padding: 6px 8px;
+  }
+
+  .icon1 {
+    font-size: 45px;
+  }
+
+  .icon2 {
+    font-size: 33px;
+  }
+
+  .icon3 {
+    font-size: 30px;
+  }
+
+  .icon4 {
+    font-size: 35px;
+  }
+
+  .icon5 {
+    font-size: 30px;
+  }
+
+  .icon6 {
+    font-size: 43px;
+  }
+
+  .reveal.icon1.active {
+    transform: translate(160px, 40px);
+  }
+
+  .reveal.icon2.active {
+    transform: translate(145px, -183px);
+  }
+
+  .reveal.icon3.active {
+    transform: translate(200px, -105px);
+  }
+
+  .reveal.icon4.active {
+    transform: translate(90px, -173px);
+  }
+
+  .reveal.icon5.active {
+    transform: translate(115px, -15px);
+  }
+
+  .reveal.icon6.active {
+    transform: translate(0px, -70px);
+  }
+
+  /* Portfolio */
+
+  .portfolio__content {
+    padding: 0 20px;
+  }
+
+  .portfolio__card {
+    width: 50%;
+  }
+
+  .overlay-title {
+    &__title {
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: ($base-size * 0.8);
     }
 
     &__subtitle {
@@ -1202,28 +1194,28 @@ section {
 
   /* Modal */
 
-.modal__content {
-  width: 75%;
+  .modal__content {
+    width: 75%;
 
-  &__description {
-    padding: 10px 10px 0;
+    &__description {
+      padding: 10px 10px 0;
+    }
   }
-}
 
-.modal-title {
-  font-size: ($base-size * 0.9);
-}
+  .modal-title {
+    font-size: ($base-size * 0.9);
+  }
 
-.modal-description {
-  font-size: ($base-size * 0.5);
-}
+  .modal-description {
+    font-size: ($base-size * 0.8);
+  }
 
-.modal-description-buttons a{
-  font-size: ($base-size * 0.5);
-  padding: 3px 7px;
-  width: 45%;
-  text-align: center;
-}
+  .modal-description-buttons a {
+    font-size: ($base-size * 0.5);
+    padding: 3px 7px;
+    width: 45%;
+    text-align: center;
+  }
 
   /* Contact */
 
@@ -1233,7 +1225,6 @@ section {
 }
 
 @media (max-width: 480px) and (max-height: 740px) {
-
   .home__title__subtitle {
     margin: 210px 0 20px;
     font-size: ($base-size * 1.8);
@@ -1252,18 +1243,17 @@ section {
 
       &__list {
         padding-left: 120px;
+      }
     }
   }
 }
-}
 
 @media (min-width: 481px) and (max-width: 768px) {
-
   /* Global */
 
-.splash {
-  background-position: unset;
-}
+  .splash {
+    background-position: unset;
+  }
 
   /* Home */
 
@@ -1312,7 +1302,7 @@ section {
       padding: 30px 70px 0;
       line-height: 1.5;
       font-size: ($base-size * 0.9);
-   }
+    }
   }
 
   /* Technologies */
@@ -1342,7 +1332,6 @@ section {
   }
 
   .overlay-title {
-
     &__title {
       font-weight: 500;
       margin-bottom: 0;
@@ -1361,48 +1350,46 @@ section {
 
   /* Modal */
 
-.modal__content {
-  width: 65%;
+  .modal__content {
+    width: 65%;
 
-  &__description {
-    padding: 10px 10px 0;
+    &__description {
+      padding: 10px 10px 0;
+    }
   }
-}
 
-.modal-title {
-  font-size: ($base-size * 0.9);
-}
+  .modal-title {
+    font-size: ($base-size * 0.9);
+  }
 
-.modal-description {
-  font-size: ($base-size * 0.6);
-}
+  .modal-description {
+    font-size: ($base-size * 0.6);
+  }
 
-.modal-description-buttons a{
-  font-size: ($base-size * 0.5);
-  padding: 3px 7px;
-  width: 40%;
-  text-align: center;
-}
+  .modal-description-buttons a {
+    font-size: ($base-size * 0.5);
+    padding: 3px 7px;
+    width: 40%;
+    text-align: center;
+  }
 
   /* Contact */
 
   .form {
     width: 70%;
   }
-
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* Global */
 
-   /* Global */
-
-   .btn {
+  .btn {
     font-size: ($base-size * 0.9);
   }
 
-   /* Home */
+  /* Home */
 
-   .home__title__content {
+  .home__title__content {
     top: 70%;
     left: 30%;
 
@@ -1455,7 +1442,7 @@ section {
       padding: 30px 70px 0;
       line-height: 1.5;
       font-size: ($base-size * 0.9);
-   }
+    }
   }
 
   /* Technologies */
@@ -1490,38 +1477,36 @@ section {
     width: 60%;
   }
 
-    /* Modal */
+  /* Modal */
 
-.modal__content {
-  width: 50%;
+  .modal__content {
+    width: 50%;
 
-  &__description {
-    padding: 10px 10px 0;
+    &__description {
+      padding: 10px 10px 0;
+    }
   }
-}
 
-.modal-title {
-  font-size: ($base-size);
-}
+  .modal-title {
+    font-size: ($base-size);
+  }
 
-.modal-description {
-  font-size: ($base-size * 0.7);
-}
+  .modal-description {
+    font-size: ($base-size * 0.7);
+  }
 
-.modal-description-buttons a{
-  font-size: ($base-size * 0.6);
-  padding: 5px 8px;
-  width: 30%;
-  text-align: center;
-}
-
+  .modal-description-buttons a {
+    font-size: ($base-size * 0.6);
+    padding: 5px 8px;
+    width: 30%;
+    text-align: center;
+  }
 }
 ////////////////////////// with height /////////////////////////
 @media (min-width: 660px) and (max-width: 1024px) and (max-height: 440px) {
+  /* Global */
 
-   /* Global */
-
-   .btn {
+  .btn {
     font-size: ($base-size * 0.7);
   }
 
@@ -1554,7 +1539,7 @@ section {
     padding: 12px 5%;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 0;
+    z-index: 2;
   }
 
   .nav__menu.active {
@@ -1562,7 +1547,6 @@ section {
   }
 
   /* Home */
-
 
   .home__title__content {
     left: 25%;
@@ -1634,7 +1618,56 @@ section {
   }
 
   .technology-item {
-    box-shadow: 10px 5px 3px 1px #ffcc33;
+    box-shadow: 6px 5px 5px 1px #ffcc33;
+    padding: 7px;
+  }
+
+  .icon1 {
+    font-size: 50px;
+  }
+
+  .icon2 {
+    font-size: 35px;
+  }
+
+  .icon3 {
+    font-size: 30px;
+  }
+
+  .icon4 {
+    font-size: 28px;
+  }
+
+  .icon5 {
+    font-size: 30px;
+  }
+
+  .icon6 {
+    font-size: 40px;
+  }
+
+  .reveal.icon1.active {
+    transform: translate(80px, 45px);
+  }
+
+  .reveal.icon2.active {
+    transform: translate(35px, -180px);
+  }
+
+  .reveal.icon3.active {
+    transform: translate(130px, -105px);
+  }
+
+  .reveal.icon4.active {
+    transform: translate(0px, -175px);
+  }
+
+  .reveal.icon5.active {
+    transform: translate(20px, -13px);
+  }
+
+  .reveal.icon6.active {
+    transform: translate(-90px, -70px);
   }
 
   /* Portfolio */
@@ -1644,7 +1677,6 @@ section {
   }
 
   .overlay-title {
-
     &__title {
       font-weight: 500;
       margin-bottom: 0;
@@ -1655,10 +1687,27 @@ section {
       display: none;
     }
   }
+
+  /* Modal */
+
+  .modal__content {
+    width: 65%;
+  }
+
+  .modal__content__container {
+    display: none;
+  }
+
+  .modal__content__description {
+    padding: 5px 10px 0;
+  }
+
+  .modal-description {
+    font-size: ($base-size * 0.6);
+  }
 }
 
-@media (min-width: 1025px) {
-
+@media (min-width: 1025px) and (max-width: 1200px){
   /* Global */
 
   .btn {
@@ -1689,37 +1738,103 @@ section {
   }
 
   .home__title__subtitle {
-    margin: 440px 0 20px;
+    margin: 340px 0 20px;
 
     &__text {
       font-size: ($base-size * 1.4);
     }
   }
 
-      /* Modal */
+  /* About */
 
-.modal__content {
-  width: 40%;
+  .about-content {
+    padding: 0 100px;
 
-  &__description {
-    padding: 10px 10px 0;
+    &__image {
+      width: 270px;
+      height: 270px;
+      border-radius: 270px;
+      outline: 1.5px solid $color-red;
+      outline-offset: 15px;
+      margin: 0;
+    }
+
+    &__description {
+      line-height: 1.6;
+    }
+  }
+
+  /* Modal */
+
+  .modal__content {
+    width: 40%;
+
+    &__description {
+      padding: 10px 10px 0;
+    }
+  }
+
+  .modal-title {
+    font-size: ($base-size * 1.1);
+  }
+
+  .modal-description {
+    font-size: ($base-size * 0.75);
+  }
+
+  .modal-description-buttons a {
+    font-size: ($base-size * 0.6);
+    padding: 7px 14px;
+    width: 30%;
+    text-align: center;
   }
 }
 
-.modal-title {
-  font-size: ($base-size * 1.1);
-}
+@media (min-width: 1201px) {
 
-.modal-description {
-  font-size: ($base-size * 0.75);
-}
+  /* Home */
 
-.modal-description-buttons a{
-  font-size: ($base-size * 0.6);
-  padding: 7px 14px;
-  width: 30%;
-  text-align: center;
-}
+  .home__title__subtitle {
+    margin: 640px 0 20px 0;
+    font-size: ($base-size * 2.5);
+
+    &__text {
+      font-size: ($base-size * 1.7);
+    }
+  }
+
+  .home__title__content {
+
+    top: 70%;
+    left: 17%;
+    height: 180px;
+    font-size: ($base-size * 2.6);
+
+    &__container {
+      height: 70px;
+      padding: 0 60px;
+
+      &:after,
+      &:before {
+
+      font-size: 82px;
+      line-height: 82px;
+      }
+
+
+      &__list {
+        padding-left: 200px;
+
+        &__item {
+          line-height: 65px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    font-size: ($base-size * 1.1);
+  }
 }
 
 //////////////// media for navbar only //////////////////
