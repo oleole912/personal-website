@@ -841,6 +841,27 @@ section {
 .modal-description-buttons {
   display: flex;
   justify-content: space-around;
+
+  a{
+    text-transform: uppercase;
+    background-color: $color-white;
+    color: $color-dark;
+    border: 2px solid $color-red;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+    font-size: ($base-size * 0.8);
+    font-weight: 500;
+    width: 35%;
+    text-align: center;
+  }
+
+  a:hover {
+    color: $color-white;
+    background-color: $color-red;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 383px) {
@@ -973,6 +994,50 @@ section {
   width: 50%;
 }
 
+.overlay-title {
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: ($base-size * 0.8)
+  }
+
+  &__subtitle {
+    display: none;
+  }
+}
+
+.btn-portfolio {
+  font-size: ($base-size * 0.5);
+  padding: 0.5px 2px;
+}
+
+/* Modal */
+
+.modal__content {
+  width: 75%;
+
+  &__description {
+    padding: 10px 10px 0;
+  }
+}
+
+.modal-title {
+  font-size: ($base-size * 0.9);
+}
+
+.modal-description {
+  font-size: ($base-size * 0.5);
+}
+
+.modal-description-buttons a{
+  font-size: ($base-size * 0.5);
+  padding: 3px 7px;
+  width: 45%;
+  text-align: center;
+}
+
+
 /* Contact */
 
 .form {
@@ -1021,7 +1086,6 @@ section {
     }
   }
 }
-
 
   /* About */
 
@@ -1117,6 +1181,49 @@ section {
   .portfolio__card {
     width: 50%;
   }
+
+  .overlay-title {
+
+    &__title {
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: ($base-size * 0.8)
+    }
+
+    &__subtitle {
+      display: none;
+    }
+  }
+
+  .btn-portfolio {
+    font-size: ($base-size * 0.5);
+    padding: 3px 7px;
+  }
+
+  /* Modal */
+
+.modal__content {
+  width: 75%;
+
+  &__description {
+    padding: 10px 10px 0;
+  }
+}
+
+.modal-title {
+  font-size: ($base-size * 0.9);
+}
+
+.modal-description {
+  font-size: ($base-size * 0.5);
+}
+
+.modal-description-buttons a{
+  font-size: ($base-size * 0.5);
+  padding: 3px 7px;
+  width: 45%;
+  text-align: center;
+}
 
   /* Contact */
 
@@ -1234,6 +1341,49 @@ section {
     width: 50%;
   }
 
+  .overlay-title {
+
+    &__title {
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: ($base-size * 0.8);
+    }
+
+    &__subtitle {
+      display: none;
+    }
+  }
+
+  .btn-portfolio {
+    font-size: ($base-size * 0.5);
+    padding: 2px 4px;
+  }
+
+  /* Modal */
+
+.modal__content {
+  width: 65%;
+
+  &__description {
+    padding: 10px 10px 0;
+  }
+}
+
+.modal-title {
+  font-size: ($base-size * 0.9);
+}
+
+.modal-description {
+  font-size: ($base-size * 0.6);
+}
+
+.modal-description-buttons a{
+  font-size: ($base-size * 0.5);
+  padding: 3px 7px;
+  width: 40%;
+  text-align: center;
+}
+
   /* Contact */
 
   .form {
@@ -1339,6 +1489,31 @@ section {
   .form {
     width: 60%;
   }
+
+    /* Modal */
+
+.modal__content {
+  width: 50%;
+
+  &__description {
+    padding: 10px 10px 0;
+  }
+}
+
+.modal-title {
+  font-size: ($base-size);
+}
+
+.modal-description {
+  font-size: ($base-size * 0.7);
+}
+
+.modal-description-buttons a{
+  font-size: ($base-size * 0.6);
+  padding: 5px 8px;
+  width: 30%;
+  text-align: center;
+}
 
 }
 ////////////////////////// with height /////////////////////////
@@ -1467,6 +1642,19 @@ section {
   .portfolio__content {
     padding: 0 70px;
   }
+
+  .overlay-title {
+
+    &__title {
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: ($base-size * 0.8);
+    }
+
+    &__subtitle {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 1025px) {
@@ -1507,6 +1695,31 @@ section {
       font-size: ($base-size * 1.4);
     }
   }
+
+      /* Modal */
+
+.modal__content {
+  width: 40%;
+
+  &__description {
+    padding: 10px 10px 0;
+  }
+}
+
+.modal-title {
+  font-size: ($base-size * 1.1);
+}
+
+.modal-description {
+  font-size: ($base-size * 0.75);
+}
+
+.modal-description-buttons a{
+  font-size: ($base-size * 0.6);
+  padding: 7px 14px;
+  width: 30%;
+  text-align: center;
+}
 }
 
 //////////////// media for navbar only //////////////////

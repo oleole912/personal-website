@@ -3,23 +3,27 @@ const projects = [
     id: "1",
     title: "Splitter",
     description:
-      "Responsive tip-calculator app built with React.<br><br>Users are able to calculate the correct tip and total cost of the bill per person.",
+      "Responsive tip-calculator app built with React.js.<br><br>Users are able to calculate the correct tip and total cost of the bill per person.",
     images: [
       "/images/splitter/splitter-empty.png",
       "/images/splitter/splitter-failed.png",
       "/images/splitter/splitter-phone.png",
     ],
+    githubLink: 'https://github.com/oleole912/splitter-app',
+    liveLink: 'https://splitter-app.oleole912.repl.co'
   },
   {
     id: "2",
     title: "Pizzeria",
     description:
-      "A simulation of client side e-commerce website with add to cart and book a table features. Built with Vanilla JavaScript.",
+      "A simulation of client side e-commerce website with 'add to cart' and 'book a table' features.",
     images: [
       "/images/pizzeria/pizzeria-pizza.png",
       "/images/pizzeria/pizzeria-book-a-table.png",
       "/images/pizzeria/pizzeria-cart.png",
     ],
+    githubLink: 'https://github.com/oleole912/project-pizzeria',
+    liveLink: 'https://project-pizzeria.oleole912.repl.co'
   },
   {
     id: "3",
@@ -31,6 +35,8 @@ const projects = [
       "/images/waiter-app/waiter-add-table.png",
       "/images/waiter-app/waiter-phone.png",
     ],
+    githubLink: 'https://github.com/oleole912/waiter-app',
+    liveLink: 'https://waiter-app.oleole912.repl.co'
   },
   {
     id: "4",
@@ -42,26 +48,32 @@ const projects = [
       "/images/landing-page/landing-page-team.png",
       "/images/landing-page/landing-page-services.png",
     ],
+    githubLink: 'https://github.com/oleole912/Design-to-code-Alecto',
+    liveLink: '#'
   },
   {
     id: "5",
-    title: "Nottification Page",
-    description: "Some description about notifications",
+    title: "Todo-app",
+    description: "Responsive ToDo App build with React.js and Redux.<br><br>It allows user to create and delete lists, as well as add and delete new categories and single cards.",
     images: [
-      "/images/landing-page/landing-page-pricing.png",
-      "/images/landing-page/landing-page-team.png",
-      "/images/landing-page/landing-page-services.png",
+      "/images/todo-app/todo-main.png",
+      "/images/todo-app/todo-lists.png",
+      "/images/todo-app/todo-favourite.png",
     ],
+    githubLink: 'https://github.com/oleole912/react-todo-app',
+    liveLink: 'https://react-todo-app.oleole912.repl.co'
   },
   {
     id: "6",
     title: "About me Page",
-    description: "Some description about about me page",
+    description: "Fully responsive single page personal website.<br><br>Tells a little bit about myself and my work.",
     images: [
-      "/images/landing-page/landing-page-pricing.png",
-      "/images/landing-page/landing-page-team.png",
-      "/images/landing-page/landing-page-services.png",
+      "/images/about-me-page/about-page-about.png",
+      "/images/about-me-page/about-page-portfolio.png",
+      "/images/about-me-page/about-page-mobile-vertical.png",
     ],
+    githubLink: '#',
+    liveLink: '#'
   },
 ];
 
@@ -91,6 +103,10 @@ const modalImage1 = document.querySelector(".modal-image-1");
 const modalImage2 = document.querySelector(".modal-image-2");
 const modalImage3 = document.querySelector(".modal-image-3");
 
+// get modal links
+const liveLink = document.querySelector('.live-link');
+const githubLink = document.querySelector('.github-link');
+
 for (const btn of learnMoreBtns) {
   btn.addEventListener("click", (e) => openModal(e));
 }
@@ -108,6 +124,15 @@ function openModal(e) {
       console.log(attribute, project.id);
       modalTitle.innerHTML = project.title;
       modalDescription.innerHTML = project.description;
+
+      const hrefLiveLink = document.createAttribute("href");
+      hrefLiveLink.value = project.liveLink;
+      liveLink.setAttributeNode(hrefLiveLink);
+
+      const hrefGithubLink = document.createAttribute("href");
+      hrefGithubLink.value = project.githubLink;
+      githubLink.setAttributeNode(hrefGithubLink);
+
       const src1 = document.createAttribute("src");
       src1.value = project.images[0];
       modalImage1.setAttributeNode(src1);
