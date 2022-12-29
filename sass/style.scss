@@ -1193,7 +1193,7 @@ section {
     width: 75%;
 
     &__description {
-      padding: 10px 10px 0;
+      padding: 0;
     }
   }
 
@@ -1202,7 +1202,7 @@ section {
   }
 
   .modal-description {
-    font-size: ($base-size * 0.8);
+    font-size: ($base-size * 0.65);
   }
 
   .modal-description-buttons a {
