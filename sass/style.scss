@@ -17,7 +17,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: $base-size;
   color: $color-dark;
-  //color: $color-very-dark-grey;
 }
 
 section {
@@ -490,9 +489,7 @@ section {
 
 .technologies {
   padding-bottom: 150px;
-  //background-color: $color-dark;
   background-color: lighten($color-dark, 5%);
-  //align-items: unset;
 }
 
 .technologies__list {
@@ -639,7 +636,6 @@ section {
 
 .contact {
   padding: 50px 0;
-  //background-color: $color-dark;
   background-color: lighten($color-dark, 5%);
   color: $color-white;
 }
@@ -773,7 +769,6 @@ section {
     width: 40%;
     display: flex;
     flex-direction: column;
-    // moze usunac max height ?
     max-height: 80%;
 
     &__container {
@@ -1502,8 +1497,9 @@ section {
     text-align: center;
   }
 }
-////////////////////////// with height /////////////////////////
+
 @media (min-width: 660px) and (max-width: 1024px) and (max-height: 440px) {
+
   /* Global */
 
   .btn {
@@ -1707,7 +1703,8 @@ section {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px){
+@media (min-width: 1025px) and (max-width: 1400px) {
+
   /* Global */
 
   .btn {
@@ -1779,36 +1776,35 @@ section {
   }
 
   .modal-description {
-    font-size: ($base-size * 0.75);
+    font-size: ($base-size * 0.7);
   }
 
   .modal-description-buttons a {
-    font-size: ($base-size * 0.6);
+    font-size: ($base-size * 0.5);
     padding: 7px 14px;
     width: 30%;
     text-align: center;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1401px) and (max-width: 2000px) {
 
   /* Home */
 
   .home__title__subtitle {
-    margin: 640px 0 20px 0;
-    font-size: ($base-size * 2.5);
+    margin: 350px 0 20px 0;
+    font-size: ($base-size * 2.4);
 
     &__text {
-      font-size: ($base-size * 1.7);
+      font-size: ($base-size * 1.6);
     }
   }
 
   .home__title__content {
-
-    top: 70%;
+    top: 65%;
     left: 17%;
     height: 180px;
-    font-size: ($base-size * 2.6);
+    font-size: ($base-size * 2.4);
 
     &__container {
       height: 70px;
@@ -1816,11 +1812,9 @@ section {
 
       &:after,
       &:before {
-
-      font-size: 82px;
-      line-height: 82px;
+        font-size: 72px;
+        line-height: 72px;
       }
-
 
       &__list {
         padding-left: 200px;
@@ -1833,9 +1827,34 @@ section {
   }
 
   .btn {
+    font-size: ($base-size * 0.8);
+  }
+  /* Modal */
+
+  .modal__content {
+    width: 35%;
+
+    &__description {
+      padding: 10px 10px 0;
+    }
+  }
+
+  .modal-title {
     font-size: ($base-size * 1.1);
   }
+
+  .modal-description {
+    font-size: ($base-size * 0.7);
+  }
+
+  .modal-description-buttons a {
+    font-size: ($base-size * 0.55);
+    padding: 7px 14px;
+    width: 30%;
+    text-align: center;
+  }
 }
+
 
 //////////////// media for navbar only //////////////////
 
