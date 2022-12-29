@@ -5,9 +5,9 @@ const projects = [
     description:
       "Responsive tip-calculator app built with React.js.<br><br>Users are able to calculate the correct tip and total cost of the bill per person.",
     images: [
-      "/images/splitter/splitter-empty.png",
-      "/images/splitter/splitter-failed.png",
-      "/images/splitter/splitter-phone.png",
+      "images/splitter/splitter-empty.png",
+      "images/splitter/splitter-failed.png",
+      "images/splitter/splitter-phone.png",
     ],
     githubLink: 'https://github.com/oleole912/splitter-app',
     liveLink: 'https://splitter-app.oleole912.repl.co'
@@ -18,9 +18,9 @@ const projects = [
     description:
       "A simulation of client side e-commerce website with 'add to cart' and 'book a table' features.",
     images: [
-      "/images/pizzeria/pizzeria-pizza.png",
-      "/images/pizzeria/pizzeria-book-a-table.png",
-      "/images/pizzeria/pizzeria-cart.png",
+      "images/pizzeria/pizzeria-pizza.png",
+      "images/pizzeria/pizzeria-book-a-table.png",
+      "images/pizzeria/pizzeria-cart.png",
     ],
     githubLink: 'https://github.com/oleole912/project-pizzeria',
     liveLink: 'https://project-pizzeria.oleole912.repl.co'
@@ -31,9 +31,9 @@ const projects = [
     description:
       "Realtime table-managing system for waiters.<br><br>It allows waiter to check the status of restaurant's tables, update that status and also add a new table or remove existing one.",
     images: [
-      "/images/waiter-app/waiter-status.png",
-      "/images/waiter-app/waiter-add-table.png",
-      "/images/waiter-app/waiter-phone.png",
+      "images/waiter-app/waiter-status.png",
+      "images/waiter-app/waiter-add-table.png",
+      "images/waiter-app/waiter-phone.png",
     ],
     githubLink: 'https://github.com/oleole912/waiter-app',
     liveLink: 'https://waiter-app.oleole912.repl.co'
@@ -44,21 +44,21 @@ const projects = [
     description:
       "This is a simple fully responsive landing page created from a design, built with HTML and CSS.<br><br> Avocode app used to get as close to a design as possible.",
     images: [
-      "/images/landing-page/landing-page-pricing.png",
-      "/images/landing-page/landing-page-team.png",
-      "/images/landing-page/landing-page-services.png",
+      "images/landing-page/landing-page-pricing.png",
+      "images/landing-page/landing-page-team.png",
+      "images/landing-page/landing-page-services.png",
     ],
     githubLink: 'https://github.com/oleole912/Design-to-code-Alecto',
-    liveLink: '#'
+    liveLink: 'https://oleole912.github.io/Design-to-code-Alecto/'
   },
   {
     id: "5",
     title: "Todo-app",
     description: "Responsive ToDo App build with React.js and Redux.<br><br>It allows user to create and delete lists, as well as add and delete new categories and single cards.",
     images: [
-      "/images/todo-app/todo-main.png",
-      "/images/todo-app/todo-lists.png",
-      "/images/todo-app/todo-favourite.png",
+      "images/todo-app/todo-main.png",
+      "images/todo-app/todo-lists.png",
+      "images/todo-app/todo-favourite.png",
     ],
     githubLink: 'https://github.com/oleole912/react-todo-app',
     liveLink: 'https://react-todo-app.oleole912.repl.co'
@@ -66,13 +66,13 @@ const projects = [
   {
     id: "6",
     title: "About me Page",
-    description: "Fully responsive single page personal website.<br><br>Tells a little bit about myself and my work.",
+    description: "Fully responsive single page Personal Website.<br><br>Tells a little bit about myself and my work.",
     images: [
-      "/images/about-me-page/about-page-about.png",
-      "/images/about-me-page/about-page-portfolio.png",
-      "/images/about-me-page/about-page-mobile-vertical.png",
+      "images/about-me-page/about-page-about.png",
+      "images/about-me-page/about-page-portfolio.png",
+      "images/about-me-page/about-page-mobile-vertical.png",
     ],
-    githubLink: '#',
+    githubLink: 'https://github.com/oleole912/personal-website',
     liveLink: '#'
   },
 ];
