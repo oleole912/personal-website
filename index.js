@@ -1,8 +1,20 @@
 const projects = [
   {
     id: "1",
+    title: "Guesthouse and Restaurant Website",
+    description: "Website for Guesthouse and Restaurant built with Wordpress.<br><br>**Swipe left to see more pictures.",
+    images: [
+      "images/jora-guesthouse/guesthouse-website-rooms.png",
+      "images/jora-guesthouse/guesthouse-website-mobile.png",
+      "images/jora-guesthouse/guesthouse-website-gallery.png",
+    ],
+    githubLink: '#',
+    liveLink: 'https://knajpamuzeum.pl',
+  },
+  {
+    id: "2",
     title: "Card details form",
-    description: "This is Interactive dard details form with data format validation built with React.js<br><br>Users are able to fill in the form and see the card details update in real-time",
+    description: "This is Interactive dard details form with data format validation built with React.js<br><br>Users are able to fill in the form and see the card details update in real-time.<br><br>**Swipe left to see more pictures.",
     images: [
       "images/card-details-form/card-details-form-validation.png",
       "images/card-details-form/card-details-form-cards.png",
@@ -12,10 +24,10 @@ const projects = [
     liveLink: 'https://tubular-dolphin-0934ec.netlify.app',
   },
   {
-    id: "2",
+    id: "3",
     title: "Splitter",
     description:
-      "Responsive tip-calculator app built with React.js.<br><br>Users are able to calculate the correct tip and total cost of the bill per person.",
+      "Responsive tip-calculator app built with React.js.<br><br>Users are able to calculate the correct tip and total cost of the bill per person.<br><br>**Swipe left to see more pictures.",
     images: [
       "images/splitter/splitter-failed.png",
       "images/splitter/splitter-empty.png",
@@ -25,10 +37,10 @@ const projects = [
     liveLink: 'https://splitter-app.oleole912.repl.co'
   },
   {
-    id: "3",
+    id: "4",
     title: "Pizzeria",
     description:
-      "A simulation of client side e-commerce website with 'add to cart' and 'book a table' features.",
+      "A simulation of client side e-commerce website with 'add to cart' and 'book a table' features.<br><br>**Swipe left to see more pictures.",
     images: [
       "images/pizzeria/pizzeria-pizza.png",
       "images/pizzeria/pizzeria-book-a-table.png",
@@ -38,10 +50,10 @@ const projects = [
     liveLink: 'https://project-pizzeria.oleole912.repl.co'
   },
   {
-    id: "4",
+    id: "5",
     title: "Waiter-app",
     description:
-      "Realtime table-managing system for waiters.<br><br>It allows waiter to check the status of restaurant's tables, update that status and also add a new table or remove existing one.",
+      "Realtime table-managing system for waiters.<br><br>It allows waiter to check the status of restaurant's tables, update that status and also add a new table or remove existing one.<br><br>**Swipe left to see more pictures.",
     images: [
       "images/waiter-app/waiter-status.png",
       "images/waiter-app/waiter-add-table.png",
@@ -51,22 +63,9 @@ const projects = [
     liveLink: 'https://waiter-app.oleole912.repl.co'
   },
   {
-    id: "5",
-    title: "Landing Page",
-    description:
-      "This is a simple fully responsive landing page created from a design, built with HTML and CSS.<br><br> Avocode app used to get as close to a design as possible.",
-    images: [
-      "images/landing-page/landing-page-pricing.png",
-      "images/landing-page/landing-page-team.png",
-      "images/landing-page/landing-page-services.png",
-    ],
-    githubLink: 'https://github.com/oleole912/Design-to-code-Alecto',
-    liveLink: 'https://oleole912.github.io/Design-to-code-Alecto/'
-  },
-  {
     id: "6",
     title: "Todo-app",
-    description: "Responsive ToDo App build with React.js and Redux.<br><br>It allows user to create and delete lists, as well as add and delete new categories and single cards.",
+    description: "Responsive ToDo App build with React.js and Redux.<br><br>It allows user to create and delete lists, as well as add and delete new categories and single cards.<br><br>**Swipe left to see more pictures.",
     images: [
       "images/todo-app/todo-lists.png",
       "images/todo-app/todo-main.png",
@@ -87,6 +86,7 @@ const projects = [
   //   githubLink: 'https://github.com/oleole912/personal-website',
   //   liveLink: '#'
   // },
+
 ];
 
 // get toggle button
